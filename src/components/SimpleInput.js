@@ -16,10 +16,6 @@ const SimpleInput = (props) => {
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
-    if (enteredName.trim() === "") {
-      return;
-    }
-
     setEnteredNameTouched(true);
 
     if (!enteredNameIsValid) {
